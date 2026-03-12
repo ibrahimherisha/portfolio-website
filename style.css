@@ -44,6 +44,9 @@ body.light-mode{
     --mobile-nav-background:rgba(255,255,255,0.9);
     --border-color:rgba(0,0,0,0.08);
 }
+html{
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
@@ -261,13 +264,14 @@ overflow-x: hidden;
  .header-content .logo {
         font-size: 22px;
         font-weight: 600;
+        letter-spacing: 0.5;
     }
 }
 /* End Header */
 /* Start Home */
 #home {
     position: relative;
-    min-height: 100vh;
+    min-height: 100svh;
     background-image: var(--hero-background);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1062,7 +1066,7 @@ box-shadow:
 .contact-left{
     width: calc(90%/2);
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(25px);
     transition: opacity 0.6s ease,transform 0.6s ease;
 }
 .contact-left.show5{
@@ -1119,7 +1123,7 @@ box-shadow:
 .contact-right{
     width: calc(90%/2);
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(25px);
     transition: opacity 0.6s ease,transform 0.6s ease;
 }
 .contact-right.show6{
